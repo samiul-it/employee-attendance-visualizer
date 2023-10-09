@@ -1,5 +1,6 @@
 import axios from "axios";
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Login = () => {
   const [userName, setUserName] = useState("");
@@ -63,12 +64,12 @@ const Login = () => {
                     required
                   />
                   <label className="label">
-                    <a
-                      href="#"
+                    <Link
                       className="label-text-alt link link-hover text-red-700"
+                      to={"/signup"}
                     >
-                      Forgot password?
-                    </a>
+                      New User? Please Signup
+                    </Link>
                   </label>
                 </div>
                 <div className="form-control mt-6">
